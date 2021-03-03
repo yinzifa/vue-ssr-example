@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body, #app {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  font-family: "Microsoft YaHei"!important;
+}
+a {
+  text-decoration: none
+}
+li{list-style: none;}
+
+.query-box {
+  background-color: #fff;
+  border-radius: 8px;
+  padding-top: 22px;
+}
+.table-box {
+  margin: 20px 0 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+/*表头颜色*/
+.el-table thead {
+  color: #3e4a54;
+  line-height: 30px;
+}
+.el-button.query,
+.el-button.reset,
+.el-button.export {
+  width: 110px;
+}
+.el-button.add {
+  width: 123px;
+}
+.el-button--primary, .el-button--primary:focus {
+  background-color: #59b9e2;
+  border-color: #59b9e2;
+}
+.el-button--primary:hover {
+  background-color: #6dc7ed;
+  border-color: #6dc7ed;
+}
+.el-pager li.active {
+  color: #59b9e2;
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background-color: #59b9e2;
+}
+.el-button--text, .el-tag {
+  color: #59b9e2;
+}
+/*二级按钮样式*/
+.el-button.second-btn {
+  width: 110px;
+  color: #59b9e2;
+  background: none;
+  border: 1px solid #59b9e2;
+}
+.el-button.second-btn:hover {
+  color: #12a2df;
+  border: 1px solid #12a2df;
+}
+.el-breadcrumb {
+  margin-bottom: 15px;
+}
+.el-pagination {
+  margin-top: 10px;
+  text-align: right;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #F5F5F5;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #F5F5F5;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px #c2c2c2;
+  background-color: #c2c2c2;;
+}
+/* input失去焦点样式 */
+.el-form-item.is-success .el-input__inner, .el-form-item.is-success .el-input__inner:focus, .el-form-item.is-success .el-textarea__inner, .el-form-item.is-success .el-textarea__inner:focus {
+  border-color: #dcdfe6;
+}
+/* 面包屑字体 */
+.el-breadcrumb__inner, .el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+.el-breadcrumb__item:first-child {
+  padding-left: 20px;
+}
+
+/*查看页表格样式*/
+.checkTable.el-table {
+  border-radius: 5px;
+}
+.checkTable.el-table th {
+  background-color: #e9edf5;
+  border-right: 2px solid #fff;
+}
+.checkTable.el-table thead th:nth-last-child(2) {
+  border-right: none;
+}
+.checkTable.el-table td,
+.checkTable.el-table .el-table__empty-block {
+  background-color: #f5f7fb;
+  border-top: 2px solid #fff;
+}
+.checkTable.el-table td, .checkTable.el-table th {
+  padding: 8px 0;
+}
+.checkTable.el-table .el-table__empty-block {
+  min-height: 40px;
+}
+/*修改联动日期选择器*/
+.date-content .el-form-item__content {
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+}
+.date-content .el-input__inner {
+  border: none;
+}
+.date-content .startTime .el-input__inner {
+  padding-left: 70px;
+}
+.date-content .endTime .el-input__inner {
+  padding-left: 40px;
+}
+.date-content .endTime span i.el-icon-date{
+  display: none;
+}
+/*列表页表格样式*/
+.el-table th {
+  background-color: #f1f4f9;
+}
+/*下拉框增加上下边距*/
+.el-select-dropdown {
+  padding: 10px 0;
+}
+/*调整确定取消按钮位置*/
+.el-message-box__btns {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.el-message-box__btns button {
+  margin-left: 10px;
+}
+/*自定义确认弹框样式*/
+.confirm-box {
+  color: #4a4a4a !important;
+  width: 437px;
+  padding-bottom: 40px;
+}
+.confirm-box .el-message-box__header {
+  padding: 40px 15px 5px;
+}
+.confirm-box .el-message-box__title {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #4a4a4a !important;
+}
+.confirm-box .el-message-box__status.el-icon-warning {
+  background: url("../images/confirm-warning.png") no-repeat center;
+  color: transparent;
+  margin-right: 10px;
+}
+.confirm-box .el-message-box__status.el-icon-error {
+  background: url("../images/confirm-error.png") no-repeat center;
+  color: transparent;
+  margin-right: 10px;
+}
+.confirm-box .el-message-box__status.el-icon-success {
+  background: url("../images/confirm-success.png") no-repeat center;
+  color: transparent;
+  margin-right: 10px;
+}
+.confirm-box .el-message-box__content {
+  color: #4a4a4a !important;
+  padding: 10px 50px 5px;
+}
+.confirm-box .el-message-box__btns {
+  justify-content: center !important;
+  padding: 30px 15px 0;
+}
+.confirm-box .el-message-box__btns .el-button {
+  padding: 12px 20px;
+  width: 110px;
+  font-size: 14px;
+  margin-left: 0;
+}
+.confirm-box .el-message-box__btns .second-btn {
+  margin-left: 20px;
+}
+/*仅有单行提示语确认弹框样式*/
+.confirm-single-box {
+  width: 360px;
+}
+/*表格吸顶样式*/
+.header-fixed {
+  position: fixed !important;
+  left: 236px;
+  top: 80px;
+  z-index: 1000;
+}
+.right-header-fixed {
+  position: fixed !important;
+  left: 236px;
+  top: 80px;
+  overflow: hidden;
+  z-index: 1001;
+}
+
+/*禁止checkbox*/
+.table-checkbox-create {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 18px;
+  top: 21px;
+  z-index: 11;
+  background-color: #edf2fc;
+  cursor: not-allowed;
+  display: inline-block;
+  border: 1px solid #dcdfe6;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+/*表格有固定列无数据时样式*/
+.el-table__fixed-body-wrapper {
+  min-height: 60px;
+  background-color: #fff;
+}
+/*弹框头部 title距离调整*/
+.el-dialog__header {
+  padding-top: 30px;
+}
